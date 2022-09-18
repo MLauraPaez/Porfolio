@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.navbar{
+background-color: rgba(247, 46, 196, 0.473);
+border-radius: 2%;
+margin: 5px;
+}
+.container2 { 
+    float: right;
+   height: 20%;
+    }
+
+.container1{ 
+    float:left;
+    margin-left: 4px;
+} 
+ul{
+    float:right;
+}   
+li{
+    margin:4px;
+}
+.mat-card {
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding:20px;
+    border-color: pink;
+    background-color:rgba(247, 54, 199, 0.473);
+
+}
+.mat-card1 {
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding:20px;
+    border-color: pink;
+    background-color:rgba(248, 116, 215, 0.507);
+}
+
+.mat-card2 {
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding:20px;
+    border-color: pink;
+    background-color:rgba(252, 155, 228, 0.493);
+}
+
+.mat-card3 {
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding:20px;
+    border-color: rgb(248, 203, 233);
+    background-color:rgba(252, 199, 239, 0.459);
+}
+.mat-card#first-card {
+    padding:0;
+}
+div#profile-background {
+    display:flex;
+    height: 500px;
+    z-index: 1;
+}
+div#profile-background img {
+    width:100%;
+    border-radius: 32px 32px 0 0;
+}
+.profile-image {
+    border-radius: 15px;
+    width: 300px;
+    height:450px;
+    margin-top: -460px;
+    z-index: 1;
+   position: relative;
+}
+
+
+.btn-right{
+    float:right;
+    color:rgb(223, 7, 7);
+}
+
+div#info-actions {
+    display:flex;
+}
+
+#info-details {
+    float:right;
+    }
+#info-details img {
+    width:100px;
+    height: auto;
+}    
+
+.card-contenido{
+    display: flex;
+    margin-bottom: 10px;
+}
+.imglogo{
+    width:100px;
+    height:80px;
+    float:left;
+    border: 2px solid rgb(233, 58, 87);
+    border-radius: 12px;
+}
+.texto{
+   margin-left: 20px;
+   float:right;
+   margin-top: 3%;
+}
+.imgEmpresa{
+    width:100px;
+    height:100px;
+    border: 2px solid rgb(233, 58, 87);
+    border-radius: 50px;
+}
+.mat-card4{
+    display: flex;
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding:20px;
+    border-color: rgb(248, 203, 233);
+    background-color:rgba(252, 199, 239, 0.459);
+   }
+.contenedordelenguajes{
+display: flex;    
+    flex-direction: row;
+}
+.card-contenidolenguajes{
+    margin-left:100px;
+}
+.imglenguaje{
+    width:200px;
+    height:200px;
+    border: 2px solid rgb(233, 58, 87);
+    border-radius: 10px;
+}
+  #label{
+    text-align: center;   
+    line-height: 30px;
+    color: white;
+    background-color: rgb(230, 15, 15);
+  }
+  #label1{
+    text-align: center;   
+    line-height: 30px;
+    color: white;
+    background-color: rgb(230, 15, 15);
+  }
+  #label2{
+    text-align: center;   
+    line-height: 30px;
+    color: white;
+    background-color: rgb(230, 15, 15);
+  }
+  #label3{
+    text-align: center;   
+    line-height: 30px;
+    color: white;
+    background-color: rgb(230, 15, 15);
+  }
+  #label4{
+    text-align: center;   
+    line-height: 30px;
+    color: white;
+    background-color: rgb(230, 15, 15);
+  }
+  #label5{
+    text-align: center;   
+    line-height: 30px;
+    color: white;
+    background-color: rgb(230, 15, 15);
+  }
+  #label6{
+    text-align: center;   
+    line-height: 30px;
+    color: white;
+    background-color: rgb(230, 15, 15);
+  }
+  #label7{
+    text-align: center;   
+    line-height: 30px;
+    color: white;
+    background-color: rgb(230, 15, 15);
+  }  
+  #myProgress{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(219, 196, 196);
+  }
+  #myProgress1{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(219, 196, 196);
+  }
+  #myProgress2{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(219, 196, 196);
+  }
+  #myProgress3{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(219, 196, 196);
+  }
+  #myProgress4{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(219, 196, 196);
+  }
+  #myProgress5{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(219, 196, 196);
+  }
+  #myProgress6{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(219, 196, 196);
+  }
+  #myProgress7{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(219, 196, 196);
+  }
+  #myBar{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color:rgb(212, 19, 13);
+  }
+
+  #myBar1 {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color:rgb(212, 19, 13);
+  }
+
+  #myBar2 {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color:rgb(212, 19, 13);
+  }
+  #myBar3 {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color:rgb(212, 19, 13);
+  }
+  #myBar4{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color:rgb(212, 19, 13);
+  }
+  #myBar5{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color:rgb(212, 19, 13);
+  }
+  #myBar6{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color:rgb(212, 19, 13);
+  }
+  #myBar7{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color:rgb(212, 19, 13);
+  }
+  button{
+background-color: rgb(212, 19, 13);
+color:black;
+border-radius: 5px;
+  }
+.hobbies{
+    display: flex;
+    flex-direction: row;
+    font-style: unset;
+}
+.card-hobbies{
+  width: 18rem;
+  border:1px solid rgba(238, 14, 14, 0.808);
+  margin: 2px;
+  padding: 7px;
+  border-radius: 5px;
+  text-align: center;
+ }
+.card-img-top{
+  width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    border-radius: 5px;
+   
+}
+
+footer{
+    background-color: pink;
+}
