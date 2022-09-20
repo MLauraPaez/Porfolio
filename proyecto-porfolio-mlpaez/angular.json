@@ -5,7 +5,11 @@
   "projects": {
     "proyecto-porfolio-mlpaez": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -27,7 +31,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
-              "/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
@@ -102,6 +106,6 @@
     }
   },
   "cli": {
-    "analytics": "7cacfeb7-e3ab-4b46-8bcf-3ccafaf8ac07"
+    "analytics": false
   }
 }

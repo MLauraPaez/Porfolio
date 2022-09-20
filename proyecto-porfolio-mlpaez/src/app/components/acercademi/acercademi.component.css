@@ -1,0 +1,40 @@
+.row{
+    padding: 20px;
+   }
+hr{
+    border-color: rgb(247, 121, 142);
+    }  
+div{
+       text-align: center;
+   }
+
+@media(min-width:576px){
+    #fotomia{
+        position: absolute;
+        width: 15%;
+        border-radius: 80%;
+        box-shadow: 3px 3px 3px grey;
+        left: 3%;
+       top: 450px;
+    }
+}   
+@media(max-width:575px){
+    #fotomia{
+        position: absolute;
+        width: 30%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 33%;
+       top: 200px;
+    }
+}   
+#nombre{
+    font-weight: bold;
+    margin-top: 30%;
+    color:burlywood;
+    font-size: 23px;
+  }
+
+  h1{
+    color:burlywood;
+  }

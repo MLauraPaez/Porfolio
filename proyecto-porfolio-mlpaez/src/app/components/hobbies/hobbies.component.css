@@ -1,0 +1,33 @@
+hr{
+    border-color: rgb(247, 121, 142);
+    }
+
+    h2{
+      color:burlywood; 
+     }      
+    .mat-card4{
+        display: flex;
+        border-radius: 32px;
+        margin: 10px 10px;
+        padding:20px;
+        border-color: rgb(248, 203, 233);
+        }
+.col-sm-2 col-md-2 col-lg-2{
+    display: flex;
+}     
+            
+          .card-hobbies{
+          width: 18rem;
+          border:1px solid rgba(247, 85, 239, 0.808);
+          margin: 2px;
+          padding: 7px;
+          border-radius: 5px;
+          text-align: center;
+          box-shadow: 10px 10px 10px black;
+          box-shadow: ejeX ejeY difumacion color;
+          }
+          .card-img-top{
+          width: 200px;
+            height: 200px;
+            border-radius: 5px;
+          }

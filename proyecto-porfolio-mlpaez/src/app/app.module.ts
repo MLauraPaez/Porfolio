@@ -13,6 +13,8 @@ import { ExperienciasComponent } from './components/experiencias/experiencias.co
 import { LenguajesyframeworksComponent } from './components/lenguajesyframeworks/lenguajesyframeworks.component';
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 @NgModule({
   declarations: [
@@ -26,12 +28,15 @@ import { FooterComponent } from './components/footer/footer.component';
     ExperienciasComponent,
     LenguajesyframeworksComponent,
     HobbiesComponent,
-    FooterComponent
+    FooterComponent,
   ],
+  
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({}),
+
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

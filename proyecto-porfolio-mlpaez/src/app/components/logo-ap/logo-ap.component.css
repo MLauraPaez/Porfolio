@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+}
+
+#logoAp{
+    width:150px;
+}
+
+img{
+    width: 40px;
+    margin:2px;
+}
+button{
+    margin-left: 10px;
+    margin-right: 5px;
+}
