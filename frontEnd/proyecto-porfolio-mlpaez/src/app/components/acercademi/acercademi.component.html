@@ -1,0 +1,29 @@
+<div class="row">
+  <br>
+</div>
+<div class="col-lg-2">
+   <button type="button" class="btn3" routerLink="/editacercademi/1" *ngIf="isLogged">
+     Editar Persona
+   </button>
+   <br>
+   <br>
+</div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+      <img src={{persona.img}} class="img-fluid" id="fotomia">
+  
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+      <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+      <p> Full Stack Developer Jr</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+      <span>
+        <h1> Acerca de Mi</h1>
+        <p>{{persona.descripcion}}</p>
+      </span>
+    </div>
+  
+  <hr>
+
+
+  <!--Soy una persona dinámica, capaz de trabajar sola como así tambien en grupo.Me relaciono muy bien con mis pares, siendo capaz de crear un grupo de trabajo de excelencia.Mi Objetivo es desempeñarme en el ámbito laboral de una manera eficaz, haciendo uso de mis conocimientos y habilidades, con el fin de crecer, no sólo de manera laboral sino además personal.-->

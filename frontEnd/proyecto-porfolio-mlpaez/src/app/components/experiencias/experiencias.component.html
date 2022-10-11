@@ -1,0 +1,60 @@
+<div class="card mat-card3">
+   <div class="card-titles">
+      <h2> Experiencias</h2>
+      <br>
+   </div>
+   <div class="col-lg-2">
+      <button type="button" class="btn3" routerLink="/nuevaexp" *ngIf="isLogged">
+         Nueva Experiencia
+      </button>
+      <br>
+      <br>
+   </div>
+
+   <div class="col lg 1"></div>
+   <div class="col-lg-11">
+      <table class="table">
+         <tbody>
+            <tr *ngFor="let Experiencia of expe">
+            <td><a href="{{Experiencia.imagenE}}" width="100px" height="100px">{{Experiencia.imagenE}}</a>
+            </td>
+            <td>
+                  <h3>{{Experiencia.nombreE}}</h3>
+               </td>
+               <td>{{Experiencia.descripcionE}}</td>
+               <td *ngIf="isLogged">
+                  <button class="btn" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-square"> Editar</i></button>
+               </td>
+
+               <td *ngIf="isLogged">
+                  <button class="btn1" (click)="delete(Experiencia.id)">
+                     <i class="bi bi-trash3-fill"> Borrar</i></button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+
+</div>
+<hr>
+
+<!--<div class="card-contenido">
+   <div><img class="imgEmpresa"  src="../../assets/img/cafe-martinez-logo.jpg"></div>
+   <div><p class="texto"> Cafeteria, ayudante de cocina, cajera y moza de salón.</p></div>
+</div> 
+<div class="card-contenido">
+   <div><img class="imgEmpresa"  src="../../assets/img/AMERIAN-HOTELES-16-9.jpg"></div>
+   <div><p class="texto"> Ayudande de cocina y Buffet.</p></div>
+</div>  
+<div class="card-contenido">
+   <div><img class="imgEmpresa"  src="../../assets/img/cvecinal.jpg"></div>
+   <div><p class="texto"> Secretaria.</p></div>
+</div>  
+<div class="card-contenido">
+   <div><img class="imgEmpresa"  src="../../assets/img/logo estetica.png"></div>
+   <div><p class="texto"> Experta en Belleza Corporal y uñas.</p></div>
+</div>  
+<div class="card-contenido">
+   <div><img class="imgEmpresa"  src="../../assets/img/jbgood-logo.jpg"></div>
+   <div><p class="texto"> Cafeteria, ayudante de cocina.</p></div>
+</div> -->

@@ -1,0 +1,58 @@
+<div class="card mat-card3">
+   <div class="card-titles">
+      <h2> Hobbies</h2>
+      <br>
+   </div>
+   <div class="col-lg-2"> 
+      <button type="button" class="btn3" routerLink="/newhobbies" *ngIf="isLogged">
+         Agregar Hobbies
+      </button>
+      <br>
+      <br>
+   </div>
+
+   <div class="col lg 1"></div>
+   <div class="col-lg-11">
+      <table class="table">
+         <tbody>
+            <tr *ngFor="let Hobbies of hobbies">
+               <td>
+                  <img src="{{Hobbies.imagenE}}" width="200px" height="200px" syle="border-radius:50px">
+               </td>
+               <td>
+                  <h3>{{Hobbies.nombreE}}</h3>
+               </td>
+               <td>{{Hobbies.descripcionE}}</td>
+               <td *ngIf="isLogged">
+                  <button class="btn" routerLink="/edithobbies/{{Hobbies.id}}">
+                  <i class="bi bi-pencil-square"> Editar</i></button>
+               </td>
+
+               <td *ngIf="isLogged">
+                  <button class="btn1" (click)="delete(Hobbies.id)">
+                     <i class="bi bi-trash3-fill"> Borrar</i></button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+
+<!--<div class="card mat-card4">
+    <h2> Hobbies y Gustos</h2>
+    <br>
+    <br>
+    <div class="row">
+    <div class="col-sm-3 col-md-3 col-lg-3">
+       <div class="card-hobbies">  <img src="../../assets/img/familia.jpg" class="card-img-top" alt="...">  <div class="card-body">  <p class="card-text">Me Encanta pasar tiempo con mi Familia!. Nos gusta disfrutar de los momentos familiares, juegos y comidas.</p>  </div> </div>
+       <br></div>
+    <div class="col-sm-3 col-md-3 col-lg-3">   
+       <div class="card-hobbies">  <img src="../../assets/img/tejiendooo.jpg" class="card-img-top" alt="...">  <div class="card-body">  <p class="card-text">Adoro tejer! He confeccionado muchos gorros y abrigos.Mis trabajos por lo general son a Crochet.</p>  </div> </div>
+       <br></div>
+    <div class="col-sm-3 col-md-3 col-lg-3">   
+       <div class="card-hobbies">  <img src="../../assets/img/test-libros0.jpg" class="card-img-top" alt="...">  <div class="card-body">  <p class="card-text">Librooos, Librooos!! Uno de mis pasatiempos es disfrutar de la Lectura. Sobretodo si son de Ciencia Ficción.</p>  </div> </div>
+       <br></div>
+    <div class="col-sm-3 col-md-3 col-lg-3">
+       <div class="card-hobbies">  <img src="../../assets/img/viajes.jpg" class="card-img-top" alt="...">  <div class="card-body">  <p class="card-text">Viajar!! Explorar nuevos horizontes!! Descubrir nuevos lugares!! Viajar es increíble!! Me encanta!!</p>  </div> </div>
+       </div>
+    </div>
+</div> -->

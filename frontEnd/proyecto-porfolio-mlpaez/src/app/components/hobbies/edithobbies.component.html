@@ -1,0 +1,23 @@
+<div class="container" *ngIf="hobbies">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="imagenE">Url de la imagen</label>
+                    <input type="imagen" class="form-control" id="imagenE" name="imagenE" [(ngModel)]="hobbies.imagenE" required>
+                </div>              
+                <div class="form-group">
+                    <label for="nombreE">Hobbies</label>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="hobbies.nombreE" name=hobbies.nombreE required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Descripcion del Hobbies</label>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="hobbies.descripcionE" name=hobbies.descripcionE required>
+                </div>
+                <button class="btn btn-primary">
+                    Editar Hobbies
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
