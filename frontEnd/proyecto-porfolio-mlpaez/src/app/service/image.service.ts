@@ -1,14 +1,17 @@
 import { Injectable } from '@angular/core';
+import { Storage, ref } from '@angular/fire/storage';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ImageService {
 
-  constructor() { }
+  constructor(private storage: Storage) { }
 
-  public uploadImage($event:any){
+  public uploadImage($event:any, name: string){
     const file = $event.target.files[0]
-    console.log(file);
+    const imgRef = ref(this.storage, `imagen/`+ name)
+    
+
   }
 }

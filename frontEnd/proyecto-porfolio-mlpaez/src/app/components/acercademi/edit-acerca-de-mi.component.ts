@@ -31,19 +31,19 @@ export class EditAcercaDeMiComponent implements OnInit {
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
-    this.personaService.update(id, this.persona).subscribe({
-      next:data => {
+    this.personaService.update(id, this.persona).subscribe(
+      data => {
         this.router.navigate(['']);
-      },
-      error: err => {
+      },err => {
         alert("Error al modificar la educacion");
         this.router.navigate(['']);
-      }});
+      }
+   )
   }
+
+  uploadImage($event:any){
+    const id = this.activatedRouter.snapshot.params['id'];
+    const name = "perfil_" + id;
+    this.imageService.uploadImage($event, name)
   }
-
- /* uploadImage($event:any){
-    this.imageService.uploadImage($event)
-  }*/
-
-
+}
