@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { persona } from 'src/app/model/persona.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PersonaService } from '../../service/persona.service';
+import { ImageService } from '../../service/image.service';
 
 @Component({
   selector: 'app-edit-acerca-de-mi',
@@ -13,7 +14,8 @@ export class EditAcercaDeMiComponent implements OnInit {
 
   constructor(private activatedRouter: ActivatedRoute,
     private personaService: PersonaService,
-    private router: Router) { }
+    private router: Router,
+    public imageService: ImageService) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
@@ -40,9 +42,8 @@ export class EditAcercaDeMiComponent implements OnInit {
   }
   }
 
-  /*uploadImage($event: any){
-
+ /* uploadImage($event:any){
+    this.imageService.uploadImage($event)
   }*/
-
 
 
