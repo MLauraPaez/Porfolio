@@ -1,5 +1,5 @@
 export const environment = {
-  firebase: {
+ firebase: {
     projectId: 'frontend-proyecto-porfolio-mlp',
     appId: '1:815503248562:web:e9c34b26fe5430df7ccdab',
     storageBucket: 'frontend-proyecto-porfolio-mlp.appspot.com',
@@ -8,5 +8,8 @@ export const environment = {
     authDomain: 'frontend-proyecto-porfolio-mlp.firebaseapp.com',
     messagingSenderId: '815503248562',
   },
-  production: true
+  production: true,
+  
+  URL:  'https://backendmlp.herokuapp.com/'
+    
 };

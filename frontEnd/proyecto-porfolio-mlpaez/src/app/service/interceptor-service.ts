@@ -9,11 +9,11 @@ import { Injectable } from '@angular/core';
 export class InterceptorService {
     [x: string]: any;
    
-    constructor(private TokenService: TokenService){}
+    constructor(private tokenService: TokenService){}
 
     intercept(req: HttpRequest<any>, next : HttpHandler):Observable<HttpEvent<any>>{
         let intReq = req;
-        const token = this.TokenService.getToken();
+        const token = this.tokenService.getToken();
         if(token != null){
             intReq = req.clone({
                 headers: req.headers.set('Authorization', 'Bearer'+token)

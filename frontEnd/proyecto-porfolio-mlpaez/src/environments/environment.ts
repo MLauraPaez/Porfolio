@@ -12,7 +12,11 @@ export const environment = {
     authDomain: 'frontend-proyecto-porfolio-mlp.firebaseapp.com',
     messagingSenderId: '815503248562',
   },
-  production: false
+  production: false,
+
+  URL : 'http://localhost:8080'
+
+  
 };
 
 /*

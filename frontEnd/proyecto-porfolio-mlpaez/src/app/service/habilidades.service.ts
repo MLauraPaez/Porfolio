@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Habilidades } from '../model/habilidades';
 
 
@@ -8,7 +9,7 @@ import { Habilidades } from '../model/habilidades';
   providedIn: 'root'
 })
 export class HabilidadesService {
-  URL = 'http://localhost:8080/habilidades/';
+  URL = 'https://backendmlp.herokuapp.com/habilidades/';
   
   constructor(private httpClient: HttpClient) { }
 

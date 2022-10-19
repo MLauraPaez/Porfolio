@@ -30,8 +30,10 @@ import { NewhobbiesComponent } from './components/hobbies/newhobbies.component';
 import { EdithobbiesComponent } from './components/hobbies/edithobbies.component';
 import { EditAcercaDeMiComponent } from './components/acercademi/edit-acerca-de-mi.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
+
 import { provideStorage,getStorage } from '@angular/fire/storage';
+
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -67,7 +69,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
+   provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideStorage(() => getStorage()),
     ],
   providers: [

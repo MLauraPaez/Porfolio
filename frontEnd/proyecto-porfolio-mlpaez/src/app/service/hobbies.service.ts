@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Hobbies } from '../model/hobbies';
 
 
@@ -8,7 +9,7 @@ import { Hobbies } from '../model/hobbies';
   providedIn: 'root'
 })
 export class HobbiesService {
-  URL = 'http://localhost:8080/hobbies/';
+  URL = 'https://backendmlp.herokuapp.com/hobbies/';
 
     constructor(private httpClient : HttpClient) { }
   

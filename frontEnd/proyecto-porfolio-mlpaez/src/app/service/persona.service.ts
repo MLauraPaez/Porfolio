@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { persona } from '../model/persona.model';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -9,7 +10,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = 'http://localhost:8080/personas/';
+  URL ='https://backendmlp.herokuapp.com/personas/';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -21,6 +22,9 @@ export class PersonaService {
     return this.httpClient.get<persona>(this.URL + `detail/${id}`);
   }
 
+  /*public save(persona: persona): Observable<any>{
+    return this.httpClient.post<any>(this.URL + 'create', persona);
+  }*/
   /*public save(educacion: Educacion): Observable<any>{
     return this.httpClient.post<any>(this.URL + 'create', educacion);
   }*/
