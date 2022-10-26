@@ -9,7 +9,7 @@ import { Habilidades } from '../model/habilidades';
   providedIn: 'root'
 })
 export class HabilidadesService {
-  URL = 'https://backendmlp.herokuapp.com/habilidades/';
+  URL =  environment.URL + 'habilidades/';
   
   constructor(private httpClient: HttpClient) { }
 

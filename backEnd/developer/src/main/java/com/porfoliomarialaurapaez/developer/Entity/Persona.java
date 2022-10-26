@@ -27,16 +27,16 @@ public class Persona {
    private String descripcion;
    
     
-    private String img;
+    private String imagen;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String descripcion, String img) {
+    public Persona(String nombre, String apellido, String descripcion, String imagen) {
          this.nombre = nombre;
         this.apellido = apellido;
         this.descripcion = descripcion;
-        this.img = img;
+        this.imagen = imagen;
     }
 
     public int getId() {
@@ -71,12 +71,12 @@ public class Persona {
         this.descripcion = descripcion;
     }
 
-    public String getImg() {
-        return img;
+    public String getImagen() {
+        return imagen;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
     
     

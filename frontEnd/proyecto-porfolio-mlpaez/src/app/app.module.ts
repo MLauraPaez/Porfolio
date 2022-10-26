@@ -34,6 +34,11 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 
 import { environment } from 'src/environments/environment';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { NewproyectosComponent } from './components/proyectos/newproyectos.component';
+import { EditproyectosComponent } from './components/proyectos/editproyectos.component';
+
+
 
 @NgModule({
   declarations: [
@@ -50,6 +55,7 @@ import { environment } from 'src/environments/environment';
     FooterComponent,
     HomeComponent,
     LoginComponent,
+    ProyectosComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
     NeweducacionComponent,
@@ -58,9 +64,11 @@ import { environment } from 'src/environments/environment';
     NewLenguajesyframeworksComponent,
     NewhobbiesComponent,
     EdithobbiesComponent,
-    EditAcercaDeMiComponent
-    
-  ],
+    EditAcercaDeMiComponent,
+    NewproyectosComponent,
+    EditproyectosComponent,
+
+    ],
   
   imports: [
     BrowserModule,

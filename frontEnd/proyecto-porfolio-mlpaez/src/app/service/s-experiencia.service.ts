@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 })
 export class SExperienciaService {
  
-  URL ='https://backendmlp.herokuapp.com/explab/' 
+  URL = environment.URL + 'explab/' 
   
 
   constructor(private httpClient: HttpClient) { }

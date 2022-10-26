@@ -1,40 +1,86 @@
-.row{
-    padding: 20px;
-   }
+
 hr{
     border-color: rgb(247, 121, 142);
     }  
-div{
+/*div{
        text-align: center;
+   }*/
+   .car3 {
+    display: flex;
+    margin: 5px;   
    }
+ 
 
 @media(min-width:576px){
     #fotomia{
-        position: absolute;
-        width: 15%;
+      /*  position: absolute;
+        width: 15%;*/
+        
         border-radius: 80%;
-        box-shadow: 3px 3px 3px grey;
-        left: 3%;
-       top: 450px;
+      /*  box-shadow: 3px 3px 3px grey;
+       left: 3%;
+       top: 450px;*/
+    }
+
+    .imagen{
+        display:flex;
+    }
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 }   
 @media(max-width:575px){
     #fotomia{
-        position: absolute;
+        position:absolute;
+        width: 25%;
+        
+        border-radius: 80%;
+        box-shadow: 3px 3px 3px grey;
+       left: 35%;
+       top: 170px;
+    }
+
+    .imagen{
+        margin: 15px;
+    }
+    #nombre{
+        font-weight: bold;
+        margin-top: 30%;
+        color:burlywood;
+        font-size: 23px;
+        top: 500px;
+        margin:15px;
+       }
+      .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         margin-top:20%;   
+      }
+    }
+       /* position: absolute;
         width: 30%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 33%;
-       top: 200px;
-    }
-}   
-#nombre{
-    font-weight: bold;
-    margin-top: 30%;
-    color:burlywood;
-    font-size: 23px;
-  }
+       top: 200px;*/
+    
+ 
+
+
+
 
   h1{
     color:burlywood;
+  }
+  .btn3{
+    background-color: burlywood;
+    color:beige;
+    border:0ch;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px rgb(80, 56, 21);  
+    
   }

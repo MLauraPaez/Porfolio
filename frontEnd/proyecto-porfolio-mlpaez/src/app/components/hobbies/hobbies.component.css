@@ -3,7 +3,7 @@
  height: 200px;
  border-radius: 5px;
 }
-hr{
+/*hr{
   border-color: rgb(247, 121, 142);
   }
 
@@ -11,7 +11,7 @@ hr{
   h3{
     color:burlywood; 
    }        
-  .mat-card3 {
+  /*.mat-card3 {
       border-radius: 32px;
       margin: 10px 10px;
       padding:20px;
@@ -34,8 +34,13 @@ hr{
      margin-left: 20px;
      float:right;
      margin-top: 10%;
-  }     
-
+  }    */ 
+  .car3 {
+       
+    margin: 10px 10px;
+    padding:20px;
+   
+ }
   .bi bi-pencil-fill{
     color:burlywood;
   }

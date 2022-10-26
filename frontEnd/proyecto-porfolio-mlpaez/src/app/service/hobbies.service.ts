@@ -9,7 +9,7 @@ import { Hobbies } from '../model/hobbies';
   providedIn: 'root'
 })
 export class HobbiesService {
-  URL = 'https://backendmlp.herokuapp.com/hobbies/';
+  URL =  environment.URL + 'hobbies/';
 
     constructor(private httpClient : HttpClient) { }
   

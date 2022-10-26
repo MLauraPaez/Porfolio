@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -11,6 +11,8 @@ import { EditLenguajesyframeworksComponent } from './components/lenguajesyframew
 import { NewhobbiesComponent } from './components/hobbies/newhobbies.component';
 import { EdithobbiesComponent } from './components/hobbies/edithobbies.component';
 import { EditAcercaDeMiComponent } from './components/acercademi/edit-acerca-de-mi.component';
+import { NewproyectosComponent } from './components/proyectos/newproyectos.component';
+import { EditproyectosComponent } from './components/proyectos/editproyectos.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path:'newhobbies', component: NewhobbiesComponent},
   { path:'edithobbies/:id', component: EdithobbiesComponent},
   { path:'editacercademi/:id', component: EditAcercaDeMiComponent},
+  { path:'nuevoproyectos', component: NewproyectosComponent},
+  { path:'editproyectos/:id', component: EditproyectosComponent},
  ];
 
 @NgModule({

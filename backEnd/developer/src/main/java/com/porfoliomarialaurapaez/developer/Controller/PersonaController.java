@@ -45,7 +45,7 @@ public class PersonaController {
         return new ResponseEntity(persona, HttpStatus.OK);
     }
     
-     @CrossOrigin(origins = "https://frontend-proyecto-porfolio-mlp.web.app")
+     /*@CrossOrigin(origins = "https://frontend-proyecto-porfolio-mlp.web.app")
      @PostMapping ("/create")
     public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona) {
         if (StringUtils.isBlank(dtopersona.getNombre())) {
@@ -57,10 +57,10 @@ public class PersonaController {
 
         
         
-        Persona persona = new Persona(dtopersona.getNombre(), dtopersona.getApellido(),dtopersona.getDescripcion(), dtopersona.getImg());
+        Persona persona = new Persona(dtopersona.getNombre(), dtopersona.getApellido(),dtopersona.getDescripcion(), dtopersona.getImagen());
         personaService.save(persona);
         return new ResponseEntity(new Mensaje("persona agregada"), HttpStatus.OK);
-    }
+    }*/
 
    
     @PutMapping("/update/{id}")
@@ -79,7 +79,7 @@ public class PersonaController {
         
         persona.setNombre(dtopersona.getNombre());
         persona.setDescripcion(dtopersona.getDescripcion());
-        persona.setImg(dtopersona.getImg());
+        persona.setImagen(dtopersona.getImagen());
         
         personaService.save(persona);
         

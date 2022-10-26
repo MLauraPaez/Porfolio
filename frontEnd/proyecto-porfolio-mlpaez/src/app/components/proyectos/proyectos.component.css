@@ -1,0 +1,56 @@
+ 
+h2{
+ color:burlywood; 
+}    
+
+
+   
+
+
+    h3{
+      color:burlywood; 
+     }        
+    .car3 {
+       
+        margin: 10px 10px;
+        padding:20px;
+       
+     }
+    .card-contenido{
+        display: flex;
+        margin-bottom: 10px;
+      }
+    
+   
+    .bi bi-pencil-fill{
+      color:burlywood;
+    }
+ 
+    .btn{
+      background-color: burlywood;
+      color:beige;
+      border-radius: 20%;
+      box-shadow: 10px 10px 10px rgb(80, 56, 21);
+      width: 70px;
+      height: 70px;
+    }
+
+    .btn1{
+      background-color: burlywood;
+      color:beige;
+      border:0ch;
+      border-radius: 20%;
+      box-shadow: 10px 10px 10px rgb(80, 56, 21);  
+      width: 70px;
+      height: 70px;
+    }
+
+    .btn3{
+      background-color: burlywood;
+      color:beige;
+      border:0ch;
+      border-radius: 5%;
+      box-shadow: 10px 10px 10px rgb(80, 56, 21);  
+      
+    }
+   

@@ -3,13 +3,13 @@ export class persona{
     nombre: string;
     apellido: string;
     descripcion: string;
-    img: string;
+    imagen: string;
 
-    constructor(nombre: string,apellido: string,descripcion: string,img: string){
+    constructor(nombre: string,apellido: string,descripcion: string,imagen: string){
         this.nombre = nombre;
         this.apellido = apellido;
         this.descripcion = descripcion;
-        this.img = img;
+        this.imagen = imagen;
     }
     
 }
